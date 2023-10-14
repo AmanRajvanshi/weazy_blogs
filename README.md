@@ -1,0 +1,1 @@
+# weazy_blogs
