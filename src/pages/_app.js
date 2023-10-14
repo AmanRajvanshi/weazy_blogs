@@ -4,11 +4,11 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { Toaster } from 'sonner';
 
-// global.api = 'https://blogsadmin.weazy.in/api/';
-global.api = 'http://127.0.0.1:8000/api/';
+global.api = 'https://blogsadmin.weazy.in/api/';
+// global.api = 'http://127.0.0.1:8000/api/';
 
-// global.img_link = 'https://blogadmin.eamagz.com/images/';
-global.img_link = 'http://127.0.0.1:8000/images/';
+global.img_link = 'https://blogadmin.eamagz.com/images/';
+// global.img_link = 'http://127.0.0.1:8000/images/';
 
 export default function App({ Component, pageProps }) {
   return (
