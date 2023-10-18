@@ -50,52 +50,39 @@ function singleBlogDetails({ data }) {
 
   return (
     <>
-      {loader ? (
-        <Loader />
-      ) : (
-        <>
-          <Head>
-            <meta
-              name="viewport"
-              content="width=device-width, initial-scale=1"
-            />
-            <link
-              rel="shortcut icon"
-              href="/images/fav.png"
-              type="image/x-icon"
-            />
-            <title>{data.page_title}</title>
-            <meta name="description" content={data.meta_description} />
-            <meta name="keywords" content={data.meta_keyword} />
-            <meta name="author" content="Weazy Infotech" />
-            <meta property="og:locale" content="en_US" />
-            <meta property="og:title" content={data.page_title} />
-            <meta property="og:type" content="article" />
-            <meta
-              property="og:url"
-              content={'https://blogs.weazy.in/singleBlogDetails' + data.path}
-            />
-            <meta
-              property="og:image"
-              content={global.img_link + data.upload_image}
-            />
-            <meta property="og:site_name" content="Weazy Blogs" />
-            <meta property="og:description" content={data.meta_description} />
-            <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:site" content="https://blogs.weazy.in" />
-            <meta name="twitter:creator" content="Weazy Blogs" />
-            <meta name="twitter:title" content={data.page_title} />
-            <meta name="twitter:description" content={data.meta_description} />
-            <meta
-              name="twitter:image"
-              content={global.img_link + data.upload_image}
-            />
-          </Head>
-          <section className="main-content mt-4">
-            <SingleBlogData data={data} />
-          </section>
-        </>
-      )}
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="/images/fav.png" type="image/x-icon" />
+        <title>{data.page_title}</title>
+        <meta name="description" content={data.meta_description} />
+        <meta name="keywords" content={data.meta_keyword} />
+        <meta name="author" content="Weazy Infotech Pvt. Ltd." />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:title" content={data.page_title} />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:url"
+          content={'https://blogs.weazy.in/singleBlogDetails' + data.path}
+        />
+        <meta
+          property="og:image"
+          content={global.img_link + data.upload_image}
+        />
+        <meta property="og:site_name" content="Weazy Blogs" />
+        <meta property="og:description" content={data.meta_description} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="https://blogs.weazy.in" />
+        <meta name="twitter:creator" content="Weazy Blogs" />
+        <meta name="twitter:title" content={data.page_title} />
+        <meta name="twitter:description" content={data.meta_description} />
+        <meta
+          name="twitter:image"
+          content={global.img_link + data.upload_image}
+        />
+      </Head>
+      <section className="main-content mt-4">
+        {loader ? <Loader /> : <SingleBlogData data={data} />}
+      </section>
     </>
   );
 }
