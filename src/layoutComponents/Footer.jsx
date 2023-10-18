@@ -8,8 +8,8 @@ function Footer() {
           <div className="row d-flex align-items-center gy-4">
             <div className="col-md-6">
               <span className="copyright">
-                © 2022 - {moment().format('YYYY')} Weazy Infotech. All Rights
-                Reserved.
+                © 2022 - {moment().format('YYYY')} Weazy Infotech Pvt. Ltd. All
+                Rights Reserved.
               </span>
             </div>
             {/* <div className="col-md-6">

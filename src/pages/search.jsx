@@ -2,6 +2,7 @@ import Sidebar from '@/components/common/Sidebar';
 import Singlepost from '@/components/common/Singlepost';
 import Loader from '@/components/loader/Loader';
 import Breadcrumb from '@/layoutComponents/Breadcrumb';
+import Head from 'next/head';
 import { useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
