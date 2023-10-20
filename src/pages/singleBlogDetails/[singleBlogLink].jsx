@@ -1,33 +1,14 @@
-import Loader from '@/components/loader/Loader';
 import SingleBlogData from '@/components/singleBlog/SingleBlogData';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 function singleBlogDetails({ data }) {
   const router = useRouter();
-  const [loader, setLoader] = useState(true);
 
   useEffect(() => {
-    fetchData(router.query.singleBlogLink);
+    update_views(router.query.singleBlogLink);
   }, [router.query.singleBlogLink]);
-
-  const fetchData = (e) => {
-    fetch(global.api + 'singleblogdata?blog_path=' + e)
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.status) {
-          update_views(data.data[0].id);
-        } else {
-        }
-      })
-      .catch((error) => {
-        console.log(error);
-      })
-      .finally(() => {
-        setLoader(false);
-      });
-  };
 
   const update_views = (id) => {
     fetch(global.api + 'update_blog_view', {
@@ -81,7 +62,7 @@ function singleBlogDetails({ data }) {
         />
       </Head>
       <section className="main-content mt-4">
-        {loader ? <Loader /> : <SingleBlogData data={data} />}
+        <SingleBlogData data={data} />
       </section>
     </>
   );
