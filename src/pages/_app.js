@@ -8,7 +8,7 @@ import { Toaster } from 'sonner';
 global.api = 'https://blogsadmin.weazy.in/api/';
 // global.api = 'http://127.0.0.1:8000/api/';
 
-global.img_link = 'https://blogadmin.weazy.com/images/';
+global.img_link = 'https://blogsadmin.weazy.com/images/';
 // global.img_link = 'http://127.0.0.1:8000/images/';
 
 export default function App({ Component, pageProps }) {
