@@ -57,7 +57,7 @@ function Header() {
     <>
       <header
         className={`header-default sticky-header ${
-          isScrolled ? 'border-bottom' : ''
+          isScrolled ? 'border-bottom' : null
         }`}
       >
         <nav className="navbar navbar-expand-lg">
@@ -117,8 +117,7 @@ function Header() {
                   <div className="pull-right mainHeaderCols searchWrapper">
                     <div className="icon-addon addon-sm">
                       <form
-                        className="searchContainer"
-                        style={{ position: 'relative', borderBottom: 'none' }}
+                        className="searchContainer border-bottom-0 position-relative"
                         onSubmit={handleSearchSubmit}
                       >
                         <input
@@ -172,7 +171,7 @@ function Header() {
         <button type="button" className="btn-close" aria-label="Close" />
         {/* logo */}
         <div className="logo mt-0">
-          <img src="/images/logo.png" alt="logo" style={{ width: '40%' }} />
+          <img src="/images/logo.png" alt="logo" className="w-40" />
         </div>
         {/* menu */}
         <nav>

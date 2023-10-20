@@ -3786,3 +3786,7 @@ button:focus {
   color: #282828;
   font-family: 'Poppins', sans-serif;
 }
+
+.w-40{
+  width: 40%;
+}
