@@ -7,17 +7,34 @@ function authorDetails({ data }) {
   return (
     <>
       <Head>
-        <title>{data.author_name} - Weazy Blogs</title>
+        <title>{data.author_name + ' | Weazy Blogs'}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/images/fav.png" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/images/package/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/images/package/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/images/package/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/images/package/site.webmanifest" />
         {/* meta tags */}
         <meta
           name="description"
           content={
             data.meta_description !== null
               ? data.meta_description
-              : 'Weazy Blogs is a platform that offers a diverse range of insightful and engaging blog posts. Covering various topics and interests, Weazy Blogs provides readers with valuable content, informed perspectives, and a platform for sharing knowledge on subjects spanning from technology and innovation to lifestyle, fostering intellectual growth and enriching online communities.'
+              : 'Weazy Blogs: Diverse, insightful platform with engaging content on tech, lifestyle, and more. Foster intellectual growth and community enrichment.'
           }
         />
         <meta
@@ -33,13 +50,16 @@ function authorDetails({ data }) {
         <meta property="og:locale" content="en_US" />
         <meta
           property="og:title"
-          content={data.author_name + ' - Weazy Blogs'}
+          content={data.author_name + ' | Weazy Blogs'}
         />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://blogs.weazy.in" />
+        <meta
+          property="og:url"
+          content={'https://blogs.weazy.in/authorDetails/' + data.path}
+        />
         <meta
           property="og:image"
-          content="https://blogs.weazy.in/images/fav.png"
+          content="https://blogs.weazy.in/images/package/favicon-192x192.png"
         />
         <meta property="og:site_name" content="Weazy Blogs" />
         <meta
@@ -47,7 +67,7 @@ function authorDetails({ data }) {
           content={
             data.meta_description !== null
               ? data.meta_description
-              : 'Weazy Blogs is a platform that offers a diverse range of insightful and engaging blog posts. Covering various topics and interests, Weazy Blogs provides readers with valuable content, informed perspectives, and a platform for sharing knowledge on subjects spanning from technology and innovation to lifestyle, fostering intellectual growth and enriching online communities.'
+              : 'Weazy Blogs: Diverse, insightful platform with engaging content on tech, lifestyle, and more. Foster intellectual growth and community enrichment.'
           }
         />
         {/* twitter tags */}
@@ -56,19 +76,19 @@ function authorDetails({ data }) {
         <meta name="twitter:creator" content="Weazy Blogs" />
         <meta
           name="twitter:title"
-          content={data.author_name + ' - Weazy Blogs'}
+          content={data.author_name + ' | Weazy Blogs'}
         />
         <meta
           name="twitter:description"
           content={
             data.meta_description !== null
               ? data.meta_description
-              : 'Weazy Blogs is a platform that offers a diverse range of insightful and engaging blog posts. Covering various topics and interests, Weazy Blogs provides readers with valuable content, informed perspectives, and a platform for sharing knowledge on subjects spanning from technology and innovation to lifestyle, fostering intellectual growth and enriching online communities.'
+              : 'Weazy Blogs: Diverse, insightful platform with engaging content on tech, lifestyle, and more. Foster intellectual growth and community enrichment.'
           }
         />
         <meta
           name="twitter:image"
-          content="https://blogs.weazy.in/images/fav.png"
+          content="https://blogs.weazy.in/images/package/favicon-192x192.png"
         />
       </Head>
       <Breadcrumb pageName={data.author_name} />

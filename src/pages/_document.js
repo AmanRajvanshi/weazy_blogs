@@ -4,10 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <meta charSet="utf-8" />
-        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <meta name="robots" content="noindex, follow" />
-        <link rel="shortcut icon" href="/images/fav.png" type="image/x-icon" />
         <link
           rel="stylesheet"
           href="/css/bootstrap.min.css"

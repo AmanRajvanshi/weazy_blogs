@@ -8,8 +8,25 @@ function Category({ metadata }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="shortcut icon" href="/images/fav.png" type="image/x-icon" />
-        <title>{metadata.category_name.name} - Weazy Blogs</title>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/images/package/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/images/package/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/images/package/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/images/package/site.webmanifest" />
+        <title>{metadata.category_name.name + ' | Weazy Blogs'}</title>
         <meta charSet="utf-8" />
         {/* meta tags */}
         <meta
@@ -25,13 +42,18 @@ function Category({ metadata }) {
         <meta property="og:locale" content="en_US" />
         <meta
           property="og:title"
-          content={metadata.category_name.name + ' - Weazy Blogs'}
+          content={metadata.category_name.name + ' | Weazy Blogs'}
         />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://blogs.weazy.in" />
+        <meta
+          property="og:url"
+          content={
+            'https://blogs.weazy.in/category/' + metadata.category_name.path
+          }
+        />
         <meta
           property="og:image"
-          content="https://blogs.weazy.in/images/fav.png"
+          content="https://blogs.weazy.in/images/package/favicon-192x192.png"
         />
         <meta property="og:site_name" content="Weazy Blogs" />
         <meta
@@ -44,7 +66,7 @@ function Category({ metadata }) {
         <meta name="twitter:creator" content="Weazy Blogs" />
         <meta
           name="twitter:title"
-          content={metadata.category_name.name + ' - Weazy Blogs'}
+          content={metadata.category_name.name + ' | Weazy Blogs'}
         />
         <meta
           name="twitter:description"
@@ -52,7 +74,7 @@ function Category({ metadata }) {
         />
         <meta
           name="twitter:image"
-          content="https://blogs.weazy.in/images/fav.png"
+          content="https://blogs.weazy.in/images/package/favicon-192x192.png"
         />
       </Head>
       <Breadcrumb pageName={metadata.category_name.name} />

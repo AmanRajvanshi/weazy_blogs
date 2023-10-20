@@ -33,7 +33,24 @@ function singleBlogDetails({ data }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="shortcut icon" href="/images/fav.png" type="image/x-icon" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/images/package/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/images/package/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/images/package/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/images/package/site.webmanifest" />
         <title>{data.page_title}</title>
         <meta name="description" content={data.meta_description} />
         <meta name="keywords" content={data.meta_keyword} />
@@ -43,7 +60,7 @@ function singleBlogDetails({ data }) {
         <meta property="og:type" content="article" />
         <meta
           property="og:url"
-          content={'https://blogs.weazy.in/singleBlogDetails' + data.path}
+          content={'https://blogs.weazy.in/singleBlogDetails/' + data.path}
         />
         <meta
           property="og:image"

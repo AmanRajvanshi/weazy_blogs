@@ -6,14 +6,31 @@ function Custom404() {
   return (
     <>
       <Head>
-        <title>404 - Weazy Blogs</title>
+        <title>404 | Weazy Blogs: Nurturing Knowledge and Ideas</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/images/fav.png" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/images/package/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/images/package/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/images/package/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/images/package/site.webmanifest" />
         {/* meta tags */}
         <meta
           name="description"
-          content="Weazy Blogs is a platform that offers a diverse range of insightful and engaging blog posts. Covering various topics and interests, Weazy Blogs provides readers with valuable content, informed perspectives, and a platform for sharing knowledge on subjects spanning from technology and innovation to lifestyle, fostering intellectual growth and enriching online communities."
+          content="Weazy Blogs: Diverse, insightful platform with engaging content on tech, lifestyle, and more. Foster intellectual growth and community enrichment."
         />
         <meta
           name="keywords"
@@ -27,12 +44,12 @@ function Custom404() {
         <meta property="og:url" content="https://blogs.weazy.in" />
         <meta
           property="og:image"
-          content="https://blogs.weazy.in/images/fav.png"
+          content="https://blogs.weazy.in/images/package/favicon-192x192.png"
         />
         <meta property="og:site_name" content="Weazy Blogs" />
         <meta
           property="og:description"
-          content="Weazy Blogs is a platform that offers a diverse range of insightful and engaging blog posts. Covering various topics and interests, Weazy Blogs provides readers with valuable content, informed perspectives, and a platform for sharing knowledge on subjects spanning from technology and innovation to lifestyle, fostering intellectual growth and enriching online communities."
+          content="Weazy Blogs: Diverse, insightful platform with engaging content on tech, lifestyle, and more. Foster intellectual growth and community enrichment."
         />
         {/* twitter tags */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -41,11 +58,11 @@ function Custom404() {
         <meta name="twitter:title" content="Weazy Blogs" />
         <meta
           name="twitter:description"
-          content="Weazy Blogs is a platform that offers a diverse range of insightful and engaging blog posts. Covering various topics and interests, Weazy Blogs provides readers with valuable content, informed perspectives, and a platform for sharing knowledge on subjects spanning from technology and innovation to lifestyle, fostering intellectual growth and enriching online communities."
+          content="Weazy Blogs: Diverse, insightful platform with engaging content on tech, lifestyle, and more. Foster intellectual growth and community enrichment."
         />
         <meta
           name="twitter:image"
-          content="https://blogs.weazy.in/images/fav.png"
+          content="https://blogs.weazy.in/images/package/favicon-192x192.png"
         />
       </Head>
       <section className="main-content">
